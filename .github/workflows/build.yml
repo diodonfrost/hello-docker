@@ -16,6 +16,8 @@ jobs:
         distribution:
           - image: django
             version: "latest"
+          - image: conventional-changelog
+            version: "latest"
 
     steps:
       - name: Checkout repository
