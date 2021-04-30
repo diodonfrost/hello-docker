@@ -29,5 +29,5 @@ jobs:
             --no-cache \
             --rm \
             --file=${{ matrix.distribution.image }}/Dockerfile.${{ matrix.distribution.image }}-${{ matrix.distribution.version }} \
-            --tag=diodonfrost/${{ matrix.distribution.image }}-sample:${{ matrix.distribution.version }} \
+            --tag=diodonfrost/hello-${{ matrix.distribution.image }}:${{ matrix.distribution.version }} \
             ${{ matrix.distribution.image }}
