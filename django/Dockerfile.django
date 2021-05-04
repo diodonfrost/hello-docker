@@ -1,9 +1,12 @@
 FROM python:3.9 
 LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 
+ARG VERSION=latest
+ARG DJANGO_VERSION=${VERSION}
+
 WORKDIR /home
 
-RUN pip install django
+RUN if [ ${DJANGO_VERSION} = "latest" ] ; then pip install django ; else pip install django==${DJANGO_VERSION} ; fi
 
 RUN django-admin startproject mysite
 

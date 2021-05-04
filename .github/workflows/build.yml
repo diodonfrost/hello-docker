@@ -16,6 +16,10 @@ jobs:
         distribution:
           - image: django
             version: "latest"
+          - image: django
+            version: "2"
+          - image: django
+            version: "3"
           - image: conventional-changelog
             version: "latest"
 
@@ -28,6 +32,7 @@ jobs:
           docker build \
             --no-cache \
             --rm \
-            --file=${{ matrix.distribution.image }}/Dockerfile.${{ matrix.distribution.image }}-${{ matrix.distribution.version }} \
+            --file=${{ matrix.distribution.image }}/Dockerfile.${{ matrix.distribution.image }} \
             --tag=diodonfrost/hello-${{ matrix.distribution.image }}:${{ matrix.distribution.version }} \
+            --build-arg VERSION=${{ matrix.distribution.version }} \
             ${{ matrix.distribution.image }}
