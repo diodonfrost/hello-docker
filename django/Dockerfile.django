@@ -1,16 +1,16 @@
 FROM python:3.9 
 LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 
+# Adapter
 ARG VERSION=latest
 ARG DJANGO_VERSION=${VERSION}
 
 WORKDIR /home
 
-RUN if [ ${DJANGO_VERSION} = "latest" ] ; then pip install django ; else pip install django==${DJANGO_VERSION} ; fi
+RUN if [ ${DJANGO_VERSION} = "latest" ] ; then pip install django gunicorn ; else pip install gunicorn django==${DJANGO_VERSION} ; fi
 
 RUN django-admin startproject mysite
 
-RUN sed -i "s/ALLOWED_HOSTS\ \=\ \[\]/ALLOWED_HOSTS\ =\ \[\'\*\'\]/" mysite/mysite/settings.py 
+WORKDIR /home/mysite
 
-CMD ["python", "/home/mysite/manage.py", "runserver", "0.0.0.0:80"]
-
+CMD ["gunicorn", "-b :80", "mysite.wsgi"]
