@@ -22,6 +22,8 @@ jobs:
             version: "3"
           - image: conventional-changelog
             version: "latest"
+          - image: rails
+            version: "latest"
 
     steps:
       - name: Checkout repository

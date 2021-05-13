@@ -1,0 +1,17 @@
+FROM ruby:3.0 
+LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
+
+WORKDIR /home
+
+RUN apt-get update && \
+    apt-get install -y npm && \
+    rm -rf /var/lib/apt/lists/* && \
+    npm install -g yarn
+
+RUN gem install rails
+
+RUN rails new mysite
+
+WORKDIR /home/mysite
+
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
