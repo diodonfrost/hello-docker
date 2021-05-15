@@ -1,4 +1,4 @@
-#  (2021-05-11)
+#  (2021-05-13)
 
 
 ### Features
@@ -8,6 +8,7 @@
 * **django:** publish multiple django versions ([2477e9f](https://github.com/diodonfrost/hello-docker/commit/2477e9f4d5b7b7d5e54ce00ee6bb618018fc6936))
 * **django:** use gunnicorn ass web server ([b56c033](https://github.com/diodonfrost/hello-docker/commit/b56c033504725d48794937a1a2ac6b8c8caeb36d))
 * **docker:** add conventional-changelog image ([6249128](https://github.com/diodonfrost/hello-docker/commit/624912859ff78cb5467b9481c8970eee44cfea31))
+* **docker:** add ruby on rails image ([718d61d](https://github.com/diodonfrost/hello-docker/commit/718d61d3fade9185c4050c9e94927462f2e07186))
 
 
 ### BREAKING CHANGES
