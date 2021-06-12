@@ -7,3 +7,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g conventional-changelog-cli
+
+CMD ["conventional-changelog", "-p", "angular", "-i", "CHANGELOG.md", "-s"]
