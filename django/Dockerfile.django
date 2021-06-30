@@ -11,6 +11,8 @@ RUN if [ ${DJANGO_VERSION} = "latest" ] ; then pip install django gunicorn ; els
 
 RUN django-admin startproject mysite
 
+RUN sed -i "s/ALLOWED_HOSTS\ \=\ \[\]/ALLOWED_HOSTS\ =\ \[\'\*\'\]/" mysite/mysite/settings.py
+
 WORKDIR /home/mysite
 
 CMD ["gunicorn", "-b :80", "mysite.wsgi"]
