@@ -1,4 +1,4 @@
-FROM ruby:3.0 
+FROM ruby:3.0
 LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 
 WORKDIR /home
