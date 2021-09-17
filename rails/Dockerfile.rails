@@ -12,6 +12,9 @@ RUN gem install rails
 
 RUN rails new mysite
 
+# Whitelist all hostnames
+RUN sed '10s/$/\n  config\.hosts\.clear/' -i mysite/config/environments/development.rb
+
 WORKDIR /home/mysite
 
 CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
