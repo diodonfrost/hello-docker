@@ -1,5 +1,11 @@
 #  (2021-06-13)
 
+## 1.0.0
+### Features
+
+* **django:** allow to serve all hosts ([d271b00](https://github.com/diodonfrost/hello-docker/commit/d271b00a0b74362320f02fce828bfc0a6a0d115c))
+* **rails:** whitelist all hostnames ([b2a8301](https://github.com/diodonfrost/hello-docker/commit/b2a8301458c1a5b8f1eb7302fb4e5db9830ab878))
+
 
 ## 0.1.0
 ### Features
