@@ -17,9 +17,9 @@ jobs:
           - image: django
             version: "latest"
           - image: django
-            version: "2"
-          - image: django
             version: "3"
+          - image: django
+            version: "2"
           - image: flask
             version: "latest"
           - image: flask
