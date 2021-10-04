@@ -1,0 +1,18 @@
+FROM python:3.9
+LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
+
+# Adapter
+ARG VERSION=latest
+ARG FLASK_VERSION=${VERSION}
+
+WORKDIR /home
+
+RUN if [ ${FLASK_VERSION} = "latest" ] ; then pip install flask gunicorn ; else pip install gunicorn flask==${FLASK_VERSION} ; fi
+
+RUN mkdir /home/mysite
+
+COPY mysite/ /home/mysite/
+
+WORKDIR /home/mysite
+
+CMD ["gunicorn", "-b :80", "wsgi:app"]
