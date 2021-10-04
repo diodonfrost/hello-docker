@@ -21,6 +21,12 @@ jobs:
             version: "2"
           - image: django
             version: "3"
+          - image: flask
+            version: "latest"
+          - image: flask
+            version: "2"
+          - image: flask
+            version: "1"
           - image: conventional-changelog
             version: "latest"
           - image: rails
