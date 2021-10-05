@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0
+
+WORKDIR /home
+
+RUN dotnet new webApp -o myWebApp --no-https
+
+WORKDIR /home/myWebApp
+
+CMD ["dotnet", "watch", "run", "--urls=http://0.0.0.0"]
