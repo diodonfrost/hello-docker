@@ -14,6 +14,8 @@ jobs:
       fail-fast: false
       matrix:
         distribution:
+          - image: asp.net
+            version: latest
           - image: django
             version: "latest"
           - image: django
