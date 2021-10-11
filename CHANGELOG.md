@@ -1,5 +1,12 @@
 #  (2021-06-13)
 
+## 1.1.0
+### Features
+
+* **docker:** add flask image ([642d6cc](https://github.com/diodonfrost/hello-docker/commit/642d6cc5f41fcc240b80d374455f0e22a55297ff))
+* **docker:** add hello-asp.net image ([6d3dad4](https://github.com/diodonfrost/hello-docker/commit/6d3dad4dfcaae4728cf7adb6e8fa20acd4656e81))
+
+
 ## 1.0.0
 ### Features
 
