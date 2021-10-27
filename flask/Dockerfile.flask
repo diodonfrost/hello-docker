@@ -5,14 +5,14 @@ LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 ARG VERSION=latest
 ARG FLASK_VERSION=${VERSION}
 
-WORKDIR /home
+WORKDIR /app
 
 RUN if [ ${FLASK_VERSION} = "latest" ] ; then pip install flask gunicorn ; else pip install gunicorn flask==${FLASK_VERSION} ; fi
 
-RUN mkdir /home/mysite
+RUN mkdir /app/mysite
 
-COPY mysite/ /home/mysite/
+COPY mysite/ /app/mysite/
 
-WORKDIR /home/mysite
+WORKDIR /app/mysite
 
 CMD ["gunicorn", "-b :80", "wsgi:app"]

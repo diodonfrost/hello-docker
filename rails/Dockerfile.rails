@@ -1,7 +1,7 @@
 FROM ruby:3.0
 LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 
-WORKDIR /home
+WORKDIR /app
 
 RUN apt-get update && \
     apt-get install -y npm && \
@@ -15,6 +15,6 @@ RUN rails new mysite
 # Whitelist all hostnames
 RUN sed '10s/$/\n  config\.hosts\.clear/' -i mysite/config/environments/development.rb
 
-WORKDIR /home/mysite
+WORKDIR /app/mysite
 
 CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
