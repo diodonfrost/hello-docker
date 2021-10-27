@@ -1,20 +1,39 @@
-#  (2021-06-13)
+#  (2021-10-27)
 
-## 1.1.0
+
+
+# [1.2.0](https://github.com/diodonfrost/hello-docker/compare/1.1.0...1.2.0) (2021-10-27)
+
+
+### Features
+
+* **app:** change docker workdir ([4dee009](https://github.com/diodonfrost/hello-docker/commit/4dee00981e09efa3beb38b16f6166d948ed58d81))
+
+
+
+# [1.1.0](https://github.com/diodonfrost/hello-docker/compare/1.0.0...1.1.0) (2021-10-05)
+
+
 ### Features
 
 * **docker:** add flask image ([642d6cc](https://github.com/diodonfrost/hello-docker/commit/642d6cc5f41fcc240b80d374455f0e22a55297ff))
 * **docker:** add hello-asp.net image ([6d3dad4](https://github.com/diodonfrost/hello-docker/commit/6d3dad4dfcaae4728cf7adb6e8fa20acd4656e81))
 
 
-## 1.0.0
+
+# [1.0.0](https://github.com/diodonfrost/hello-docker/compare/0.1.0...1.0.0) (2021-09-17)
+
+
 ### Features
 
-* **django:** allow to serve all hosts ([d271b00](https://github.com/diodonfrost/hello-docker/commit/d271b00a0b74362320f02fce828bfc0a6a0d115c))
+* **django:** allow to server all hosts ([d271b00](https://github.com/diodonfrost/hello-docker/commit/d271b00a0b74362320f02fce828bfc0a6a0d115c))
 * **rails:** whitelist all hostnames ([b2a8301](https://github.com/diodonfrost/hello-docker/commit/b2a8301458c1a5b8f1eb7302fb4e5db9830ab878))
 
 
-## 0.1.0
+
+# [0.1.0](https://github.com/diodonfrost/hello-docker/compare/b3d0232be0027d1c9b30af62ab64cc2ef9694276...0.1.0) (2021-06-13)
+
+
 ### Features
 
 * changing docker image name convention ([15947fd](https://github.com/diodonfrost/hello-docker/commit/15947fdec3378ad7a438351691c8e869334b0fa0))
@@ -29,3 +48,6 @@
 ### BREAKING CHANGES
 
 * changing docker image name convention
+
+
+
