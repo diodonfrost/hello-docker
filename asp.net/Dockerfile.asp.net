@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 
 WORKDIR /app
 
-RUN dotnet new webApp -o myWebApp --no-https
+RUN dotnet new webapp -o myWebApp --no-https
 
 WORKDIR /app/myWebApp
 
