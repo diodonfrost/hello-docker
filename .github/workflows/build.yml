@@ -19,6 +19,8 @@ jobs:
           - image: django
             version: "latest"
           - image: django
+            version: "4"
+          - image: django
             version: "3"
           - image: django
             version: "2"
