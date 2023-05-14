@@ -1,4 +1,23 @@
-#  (2021-10-27)
+#  (2023-05-14)
+
+
+
+# [1.4.0](https://github.com/diodonfrost/hello-docker/compare/1.3.0...1.4.0) (2023-05-14)
+
+
+### Bug Fixes
+
+* **conventional-changelog:** ignore git safe directory ([3f931cb](https://github.com/diodonfrost/hello-docker/commit/3f931cb506f6d0f6910b891d4056b088a52a7317))
+
+
+
+# [1.3.0](https://github.com/diodonfrost/hello-docker/compare/1.2.0...1.3.0) (2023-05-12)
+
+
+### Features
+
+* **asp.net:** upgrade to version 7.0 ([5977aa8](https://github.com/diodonfrost/hello-docker/commit/5977aa8c7467e897a809a2f219a9c0030f54263c))
+* **docker:** build and push django 4 image ([548423c](https://github.com/diodonfrost/hello-docker/commit/548423c18efce1da0477318ed2da4daecb423d4c))
 
 
 
