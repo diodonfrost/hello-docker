@@ -8,6 +8,6 @@ RUN apt-get update && \
 
 RUN git config --global --add safe.directory '*'
 
-RUN npm install -g conventional-changelog-cli
+RUN npm install -g conventional-changelog-cli@2.2.2
 
 CMD ["conventional-changelog", "-p", "angular", "-i", "CHANGELOG.md", "-s"]
