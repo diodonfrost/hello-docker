@@ -1,4 +1,10 @@
-#  (2023-05-14)
+#  (2023-08-11)
+
+
+### Features
+
+* **conventional-changelog:** bump ubuntu version to 22.04 ([839a4d1](https://github.com/diodonfrost/hello-docker/commit/839a4d11612aecd038cf956094d236f2b9922322))
+* **conventional-changelog:** freeze version to 2.2.2 ([7e3d4f7](https://github.com/diodonfrost/hello-docker/commit/7e3d4f777d1f39c8701270fe5a6d53cda21dc065))
 
 
 
